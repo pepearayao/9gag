@@ -7,6 +7,10 @@ Finished at 17:55
 
 # LOG
 
+## 18:00 - 19:00 (extra time)
+1. Transformed all the functions into a class.
+2. Added the data from comments and votes numbers, media type and link.
+
 ### 17:05 - 17:45
 1. Algorithm to scroll is proving much more difficult than anticipated. Stll stuck on it.
 2. Managed to finish the algorithm to scroll and retrieve. Is getting at least the number of items requested on config.
