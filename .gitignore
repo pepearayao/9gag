@@ -1,0 +1,4 @@
+.python-version
+.json
+output/
+__pycache__
