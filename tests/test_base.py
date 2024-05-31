@@ -30,6 +30,6 @@ def test_output_format(json_output):
         'comments',
         'awards',
         'media_type',
-        'media_link',
-        'post_link'
+        'media_url',
+        'post_url'
     ])

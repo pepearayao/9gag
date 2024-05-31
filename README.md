@@ -5,7 +5,14 @@ This will be the log of the work as I move forward. I started this at 15.45 on M
 
 # LOG
 
-### 16:10 - XX
+### 17:05 - 17:45
+1. Algorithm to scroll is proving much more difficult than anticipated. Stll stuck on it.
+
+### 16:38 - 17:05
+1. Decided to focus on retrieving only 1 post and the increase complecity by adding a scrolling algorithm.
+2. Saving succesfully one scroll from 9GAG. Missing scroll logic and more data from post. Will add in what is left of time.
+
+### 16:10 - 16:38
 1. Params file and config file done. Got stuck with absolute paths.
 2. First webdriver working and loading website. Now will start working on algorithm to scroll and capture data.
 

@@ -5,6 +5,7 @@ import yaml
 PACKAGE_PATH = os.path.dirname(os.path.abspath(__file__))
 ROOT_PATH = os.path.abspath(os.path.join(PACKAGE_PATH, '..'))
 OUTPUT_PATH = os.path.join(ROOT_PATH, 'output')
+
 CONFIG_FILE_PATH = os.path.join(PACKAGE_PATH, 'config.yaml')
 
 # Function to retrieve YAML config values.
@@ -23,4 +24,5 @@ COMMENTS_TO_FETCH = configs['comments_to_fetch']
 
 
 # Define variable from Environemtn
-ENVIRONMENT = os.environ('ENVIRONMENT')
+
+ENVIRONMENT = os.environ['ENVIRONMENT']
