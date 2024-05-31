@@ -5,7 +5,11 @@ This will be the log of the work as I move forward. I started this at 15.45 on M
 
 # LOG
 
-### 15:52 - XX
+### 16:10 - XX
+1. Params file and config file done. Got stuck with absolute paths.
+2. First webdriver working and loading website. Now will start working on algorithm to scroll and capture data.
+
+### 15:52 - 16:10
 1. Finished first fixture
 2. Package built and running.
 3. Test cases done.
