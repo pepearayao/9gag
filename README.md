@@ -7,7 +7,10 @@ Finished at 17:55
 
 # LOG
 
-## 18:00 - 19:00 (extra time)
+### 19:00 - 19:25
+1. Added functionality for production on Selenium Grid.
+
+### 18:00 - 19:00 (extra time)
 1. Transformed all the functions into a class.
 2. Added the data from comments and votes numbers, media type and link.
 

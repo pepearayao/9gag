@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
-from scraper.params import POSTS_TO_FETCH, ENVIRONMENT
+from scraper.params import POSTS_TO_FETCH,ENVIRONMENT,GRID_SERVER_HOST,GRID_SERVER_PORT,GRID_SERVER_ENDPOINT
 from scraper.data import Post
 import time
 import re
@@ -15,8 +15,16 @@ class PostRetriever:
     def __init__(self, n:int = POSTS_TO_FETCH):
     #   Instantiate webdriver and make it headless in production environments.
         options = webdriver.ChromeOptions()
-        if ENVIRONMENT == 'PROD': options.add_argument("--headless")
-        self.driver = webdriver.Chrome(options=options)
+        if ENVIRONMENT == 'PROD':
+            PATH = GRID_SERVER_HOST + ":" + str(GRID_SERVER_PORT) + GRID_SERVER_ENDPOINT
+            options.add_argument('--ignore-ssl-errors=yes')
+            options.add_argument('--ignore-certificate-errors')
+            self.driver = webdriver.Remote(
+                command_executor=PATH,
+                options=options
+            )
+        else:
+            self.driver = webdriver.Chrome()
         self.n = n
 
     def load_site(self):
@@ -81,6 +89,10 @@ class PostRetriever:
             last_itme = len(articles)
 
         return True
+
+    def close_driver(self):
+    #   Close the driver
+        self.driver.quit()
 
     def get_title(self, post:WebElement) -> str:
         '''
@@ -171,3 +183,4 @@ if __name__ == "__main__":
     retriever = PostRetriever(5)
     retriever.load_site()
     retriever.scrape_posts()
+    retriever.close_driver()

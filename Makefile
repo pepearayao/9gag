@@ -5,5 +5,8 @@ clean_folders:
 install_package:
 	pip install -e .
 
-run:
+test:
 	pytest -vv
+
+run:
+	curl x

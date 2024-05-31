@@ -21,6 +21,9 @@ OUTPUT_FORMAT = configs['output_format']
 POSTS_TO_FETCH = configs['posts_to_fetch']
 COMMENTS = configs['comments']
 COMMENTS_TO_FETCH = configs['comments_to_fetch']
+GRID_SERVER_HOST = configs['grid_server_host']
+GRID_SERVER_PORT = configs['grid_server_port']
+GRID_SERVER_ENDPOINT = configs['grid_server_endpoint']
 
 
 # Define variable from Environemtn

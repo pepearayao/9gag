@@ -4,3 +4,7 @@ output_format: json
 posts_to_fetch: 10
 comments: false
 comments_to_fetch: 0
+
+grid_server_host: http://localhost
+grid_server_port: 4444
+grid_server_endpoint: /wd/hub
