@@ -3,12 +3,15 @@ A 9GAG Scraper as a 2 hour challenge.
 
 This will be the log of the work as I move forward. I started this at 15.45 on May 31st.
 
+Finished at 17:55
+
 # LOG
 
 ### 17:05 - 17:45
 1. Algorithm to scroll is proving much more difficult than anticipated. Stll stuck on it.
 2. Managed to finish the algorithm to scroll and retrieve. Is getting at least the number of items requested on config.
-3.
+3. Finished challenge. Couldn't gather more data from scraping because of time constrain.
+4. Error with regards of items scraped. Is scraping more items than requested, still have to fix that.
 
 ### 16:38 - 17:05
 1. Decided to focus on retrieving only 1 post and the increase complecity by adding a scrolling algorithm.

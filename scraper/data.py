@@ -1,6 +1,7 @@
 import os
 import json
-from params import OUTPUT_PATH, OUTPUT_FORMAT
+from scraper.params import OUTPUT_PATH, OUTPUT_FORMAT
+from typing import Union
 
 
 class Post:
@@ -21,21 +22,11 @@ class Post:
 
         }
 
-    def set_title(self, title:str):
+    def set_item(self, item:str, value: Union[str, list]):
         '''
-        Saves Post Title
-
-        :title: Title of the post
+        Saves item into dictionary
         '''
-        self.post['title'] = title
-
-    def set_post_url(self, post_url:str):
-        '''
-        Saves Post Title
-
-        :post_url: URL of post
-        '''
-        self.post['post_url'] = post_url
+        self.post[item] = value
 
     def save(self):
         '''

@@ -1,6 +1,6 @@
 version: 1.0
 
 output_format: json
-posts_to_fetch: 100
+posts_to_fetch: 10
 comments: false
 comments_to_fetch: 0
