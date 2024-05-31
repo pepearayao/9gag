@@ -5,6 +5,11 @@ This will be the log of the work as I move forward. I started this at 15.45 on M
 
 # LOG
 
+### 15:52 - XX
+1. Finished first fixture
+2. Package built and running.
+3. Test cases done.
+
 ### 15:45 - 15:52
 1. I will focus on deliver on the assignment by doing the whole process first without much
 detail and the add detail as I move forward. To manage to get to the objective and build on that.
