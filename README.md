@@ -7,6 +7,8 @@ This will be the log of the work as I move forward. I started this at 15.45 on M
 
 ### 17:05 - 17:45
 1. Algorithm to scroll is proving much more difficult than anticipated. Stll stuck on it.
+2. Managed to finish the algorithm to scroll and retrieve. Is getting at least the number of items requested on config.
+3.
 
 ### 16:38 - 17:05
 1. Decided to focus on retrieving only 1 post and the increase complecity by adding a scrolling algorithm.

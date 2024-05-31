@@ -63,17 +63,18 @@ def get_posts(n:int = POSTS_TO_FETCH) -> bool:
         articles = driver.find_elements(By.TAG_NAME, 'article')
 
 #   Then we retrieve the last posts loaded in DOM and work with those
-        articles = articles[last_itme:]
-        for article in articles:
-            post = Post()
-            post.set_title(get_title(article))
-            post.set_post_url(get_post_link(article))
-            post.save()
-
+        current_articles = articles[last_itme:]
+        if current_articles:
+            for article in current_articles:
+                post = Post()
+                post.set_title(get_title(article))
+                post.set_post_url(get_post_link(article))
+                post.save()
+        time.sleep(5)
 #   Scroll down and update pixels and  last_item number
         driver.execute_script(f'window.scrollBy({present_scroll},{present_scroll + scroll_size})')
         present_scroll = present_scroll + scroll_size
         last_itme = len(articles)
 
 if __name__ == "__main__":
-    get_posts(1)
+    get_posts()
